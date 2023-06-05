@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio_dk</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav{
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: rgb(9, 123, 132);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            color: white;
+            list-style: none;
+            margin: 25px;
+        }
+        nav ul li:hover{
+            color: black;
+            font-size: 1.1rem;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .first_section{
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+        }
+        .second_section{
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        .first_section > div{
+            width: 30%;
+        }
+        .left_section{
+            font-size: 2.0rem;
+        }
+        .left_section .buttons{
+            padding: 30px 0;
+        }
+        .left_section .btn{
+            padding: 10px;
+            background: rgb(198, 204, 211);
+            color: rgb(0, 0, 0);
+            border: 2px solid gray;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .right_section img{
+           width: 80%;
+        }
+        .highlighting{
+            color: rgb(127, 127, 255);
+        }
+        #element{
+            color: rgb(127, 127, 255);
+        }
+        main hr{
+            border: 0;
+            background: black;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+        .second_section h1{
+            font-size: 1.7rem;
+        }
+        .text_gray{
+            color: gray;
+        }
+        .second_section .box{
+            background: black;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+        }
+        footer{
+            background-color: aliceblue;
+            
+        }
+        .footer{
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+        .footer ul{
+            list-style: none;
+        }
+        .footer > div{
+            width: 223px;
+        }
+        footer .footer-rights{
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class = "left">DK portfolio</div>
+            <div class = "right"><ul>
+                <a href="/"><li>Home</li></a>
+                <a href="/"><li>About</li></a>
+                <a href="/"><li>Projects</li></a>
+                <a href="/"><li>Contact Me</li></a>
+                <a href="/"><li>Old site</li></a>
+            </ul></div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="first_section">
+            <div class="left_section">
+                What's up people! 
+                <div>I am <span class="highlighting">Deepak </span>and I am looking to work in an environment that encourages me to succeed and grow professionally and where I can
+                    utilize my skills and knowledge appropriately.</div>
+                    <div>I am proficient in,</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">
+                        Download resume
+                    </button>
+                    <button class="btn">
+                        Gthub link
+                    </button>
+                </div>
+
+                               
+            </div>
+            <div class="right_section">
+                <img src="bg1.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="second_section">
+            <span class="text_gray">what I have done so fare</span>
+            <h1>Past Experience in Education</h1>
+            <div class="box">
+
+            </div>
+            <div>
+                <ul>
+                    <li>Completed Post Graduation in year 2023</li>
+                    <li>Completed Graduation in 2020</li>
+                    <li>High school in 2017</li>
+                    <li>Elementry school in 2015</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>DK Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>content</li>
+                    <li>services</li>
+                    <li>old site</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>content</li>
+                    <li>services</li>
+                    <li>old site</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>content</li>
+                    <li>services</li>
+                    <li>old site</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; DKportfolio.com | All right reserved 
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Python language', 'sql database','C#','flask framework'],
+          typeSpeed: 50,
+        });
+    </script>
+
+
+
+    
+
+</body>
+</html>
